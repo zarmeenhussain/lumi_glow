@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LumiGlow Cosmetics • Beauty, Elevated</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#e11d48' },
+            ink: '#0f172a'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'Segoe UI']
+          },
+          boxShadow: {
+            glow: '0 10px 30px rgba(225, 29, 72, .25)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" href="https://fav.farm/💄">
+</head>
+<body class="bg-gradient-to-b from-rose-50 to-white text-ink font-sans">
+  <header class="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-rose-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="inline-flex h-8 w-8 rounded-full bg-primary text-white items-center justify-center text-lg">LG</span>
+          <span class="font-semibold text-xl tracking-tight">LumiGlow</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-ink/80 hover:text-ink">Home</a>
+          <a href="products.html" class="text-sm font-medium text-ink/80 hover:text-ink">Shop</a>
+          <a href="about.html" class="text-sm font-medium text-ink/80 hover:text-ink">About</a>
+          <a href="contact.html" class="text-sm font-medium text-ink/80 hover:text-ink">Contact</a>
+          <a href="login.html" class="px-4 py-2 rounded-full bg-ink text-white text-sm hover:opacity-90">Login</a>
+          <a href="products.html" class="relative inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25h10.836c.86 0 1.61-.602 1.792-1.445l1.273-5.91a1.125 1.125 0 0 0-1.098-1.37H6.732M7.5 14.25 5.106 5.272M7.5 14.25l-.878 3.514A1.875 1.875 0 0 0 8.44 19.5h8.32m0 0a1.875 1.875 0 1 0 1.875 1.875M16.76 19.5a1.875 1.875 0 1 0-1.875 1.875"/></svg>
+            <span id="cartCount" class="absolute -top-1 -right-2 text-xs px-1.5 py-0.5 rounded bg-primary text-white">0</span>
+          </a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg hover:bg-rose-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-rose-100 bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-3 grid grid-cols-2 gap-3">
+        <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">Home</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">Shop</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">About</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">Contact</a>
+        <a href="login.html" class="px-4 py-2 rounded-lg bg-ink text-white text-sm">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-rose-100 via-white to-rose-50"></div>
+      <div class="relative max-w-7xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center text-xs font-semibold uppercase tracking-widest text-primary bg-rose-100 rounded-full px-3 py-1">New Collection</span>
+          <h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">Glow With Confidence</h1>
+          <p class="mt-4 text-ink/70 md:text-lg">Skincare and makeup crafted to elevate your daily ritual with clean, high-performing formulas.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="products.html" class="px-6 py-3 rounded-full bg-primary text-white shadow-glow">Shop Bestsellers</a>
+            <a href="about.html" class="px-6 py-3 rounded-full border border-ink/10 hover:bg-rose-50">Our Story</a>
+          </div>
+          <dl class="mt-10 grid grid-cols-3 gap-4">
+            <div class="text-center">
+              <div class="text-2xl font-bold">1M+</div>
+              <div class="text-xs text-ink/60">Happy Customers</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold">100%</div>
+              <div class="text-xs text-ink/60">Cruelty Free</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold">24/7</div>
+              <div class="text-xs text-ink/60">Support</div>
+            </div>
+          </dl>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 bg-gradient-to-tr from-rose-200/60 to-rose-100/30 rounded-3xl blur-2xl"></div>
+          <img class="relative w-full rounded-3xl shadow-xl" src="assets/images/hero-banner.jpg" alt="Cosmetics">
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between">
+        <h2 class="text-2xl md:text-3xl font-bold">Shop By Category</h2>
+        <a href="products.html" class="text-primary text-sm">View all</a>
+      </div>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="products.html#Skincare" class="group relative rounded-2xl overflow-hidden">
+          <img src="assets/images/cat-skincare.jpg" class="h-44 w-full object-cover" alt="Skincare">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/60"></div>
+          <div class="absolute bottom-3 left-3 text-white font-semibold group-hover:translate-y-[-2px] transition">Skincare</div>
+        </a>
+        <a href="products.html#Makeup" class="group relative rounded-2xl overflow-hidden">
+          <img src="assets/images/cat-makeup.jpg" class="h-44 w-full object-cover" alt="Makeup">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/60"></div>
+          <div class="absolute bottom-3 left-3 text-white font-semibold">Makeup</div>
+        </a>
+        <a href="products.html#Fragrance" class="group relative rounded-2xl overflow-hidden">
+          <img src="assets/images/cat-fragrance.jpg" class="h-44 w-full object-cover" alt="Fragrance">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/60"></div>
+          <div class="absolute bottom-3 left-3 text-white font-semibold">Fragrance</div>
+        </a>
+        <a href="products.html#Haircare" class="group relative rounded-2xl overflow-hidden">
+          <img src="assets/images/cat-haircare.jpg" class="h-44 w-full object-cover" alt="Haircare">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/60"></div>
+          <div class="absolute bottom-3 left-3 text-white font-semibold">Haircare</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-rose-50/60 border-y border-rose-100">
+      <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex items-end justify-between">
+          <h2 class="text-2xl md:text-3xl font-bold">Bestsellers</h2>
+          <a href="products.html" class="text-primary text-sm">Shop all</a>
+        </div>
+        <div id="bestsellers" class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-1">
+          <h2 class="text-2xl md:text-3xl font-bold">Loved By You</h2>
+          <p class="mt-2 text-ink/70">Real stories from our community on their glow journey.</p>
+        </div>
+        <div class="md:col-span-2 overflow-x-auto no-scrollbar">
+          <div class="flex gap-4 min-w-max">
+            <div class="w-80 p-6 rounded-2xl border border-rose-100 bg-white">
+              <div class="flex items-center gap-2">
+                <img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="">
+                <div>
+                  <div class="font-semibold">Amelia</div>
+                  <div class="text-xs text-ink/60">Skincare</div>
+                </div>
+              </div>
+              <p class="mt-4 text-ink/80">The serum is a game changer. My skin has never looked better.</p>
+            </div>
+            <div class="w-80 p-6 rounded-2xl border border-rose-100 bg-white">
+              <div class="flex items-center gap-2">
+                <img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=200&auto=format&fit=crop" alt="">
+                <div>
+                  <div class="font-semibold">Lena</div>
+                  <div class="text-xs text-ink/60">Makeup</div>
+                </div>
+              </div>
+              <p class="mt-4 text-ink/80">Lightweight foundation with perfect coverage. Feels like skin.</p>
+            </div>
+            <div class="w-80 p-6 rounded-2xl border border-rose-100 bg-white">
+              <div class="flex items-center gap-2">
+                <img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&auto=format&fit=crop" alt="">
+                <div>
+                  <div class="font-semibold">Maya</div>
+                  <div class="text-xs text-ink/60">Haircare</div>
+                </div>
+              </div>
+              <p class="mt-4 text-ink/80">Shine without the weight. My curls love it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="bg-ink rounded-3xl p-10 md:p-14 text-white grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold">Join The Glow List</h3>
+          <p class="mt-2 text-white/80">Early access to drops, tips, and exclusive offers.</p>
+        </div>
+        <form id="newsletterForm" class="flex gap-3">
+          <input id="newsletterEmail" type="email" required placeholder="Your email" class="flex-1 rounded-xl px-4 py-3 text-ink placeholder:text-ink/50">
+          <button class="px-6 py-3 rounded-xl bg-primary text-white">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-rose-100">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex h-8 w-8 rounded-full bg-primary text-white items-center justify-center text-lg">LG</span>
+          <span class="font-semibold text-xl tracking-tight">LumiGlow</span>
+        </div>
+        <p class="mt-3 text-ink/70">Clean, effective beauty essentials designed for luminous skin and effortless looks.</p>
+      </div>
+      <div>
+        <div class="font-semibold">Shop</div>
+        <ul class="mt-3 space-y-2 text-ink/70 text-sm">
+          <li><a href="products.html#Skincare" class="hover:text-ink">Skincare</a></li>
+          <li><a href="products.html#Makeup" class="hover:text-ink">Makeup</a></li>
+          <li><a href="products.html#Haircare" class="hover:text-ink">Haircare</a></li>
+          <li><a href="products.html#Fragrance" class="hover:text-ink">Fragrance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold">Company</div>
+        <ul class="mt-3 space-y-2 text-ink/70 text-sm">
+          <li><a href="about.html" class="hover:text-ink">About</a></li>
+          <li><a href="contact.html" class="hover:text-ink">Contact</a></li>
+          <li><a href="login.html" class="hover:text-ink">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-rose-100">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-ink/60 flex items-center justify-between">
+        <div>© <span id="year"></span> LumiGlow</div>
+        <div class="flex items-center gap-3">
+          <a href="#" class="hover:text-ink">Instagram</a>
+          <a href="#" class="hover:text-ink">TikTok</a>
+          <a href="#" class="hover:text-ink">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LumiGlow • Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: { DEFAULT: '#e11d48' }, ink: '#0f172a' },
+          fontFamily: { sans: ['Poppins','ui-sans-serif','system-ui','Segoe UI'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-rose-50/40 text-ink font-sans">
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-rose-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="inline-flex h-8 w-8 rounded-full bg-primary text-white items-center justify-center text-lg">LG</span>
+          <span class="font-semibold text-xl tracking-tight">LumiGlow</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-ink/80 hover:text-ink">Home</a>
+          <a href="products.html" class="text-sm font-medium text-ink/80 hover:text-ink">Shop</a>
+          <a href="about.html" class="text-sm font-medium text-ink/80 hover:text-ink">About</a>
+          <a href="contact.html" class="text-sm font-medium text-ink">Contact</a>
+          <a href="login.html" class="px-4 py-2 rounded-full bg-ink text-white text-sm hover:opacity-90">Login</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg hover:bg-rose-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-rose-100 bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-3 grid grid-cols-2 gap-3">
+        <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">Home</a>
+        <a href="products.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">Shop</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg hover:bg-rose-50 text-sm">About</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg bg-rose-50 text-sm">Contact</a>
+        <a href="login.html" class="px-4 py-2 rounded-lg bg-ink text-white text-sm">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h1 class="text-3xl font-extrabold">We’re Here To Help</h1>
+        <p class="mt-2 text-ink/70">Questions, feedback, or press inquiries—drop us a message.</p>
+        <div class="mt-6 p-6 rounded-2xl border border-rose-100 bg-white">
+          <div class="text-sm text-ink/70">Email</div>
+          <div class="font-semibold">support@lumiglow.example</div>
+          <div class="mt-4 text-sm text-ink/70">Hours</div>
+          <div class="font-semibold">Mon–Fri, 9:00–18:00</div>
+        </div>
+      </div>
+      <form id="contactForm" class="p-6 rounded-2xl border border-rose-100 bg-white">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="text-sm text-ink/70">Name</label>
+            <input id="contactName" required class="mt-1 w-full rounded-lg border border-rose-200 px-3 py-2">
+          </div>
+          <div>
+            <label class="text-sm text-ink/70">Email</label>
+            <input id="contactEmail" required type="email" class="mt-1 w-full rounded-lg border border-rose-200 px-3 py-2">
+          </div>
+        </div>
+        <div class="mt-4">
+          <label class="text-sm text-ink/70">Message</label>
+          <textarea id="contactMessage" rows="5" required class="mt-1 w-full rounded-lg border border-rose-200 px-3 py-2"></textarea>
+        </div>
+        <div class="mt-4">
+          <div class="text-sm text-ink/70">Rate Your Experience</div>
+          <div id="rating" class="mt-1 flex gap-2">
+            <button type="button" data-value="1" class="star h-10 w-10 rounded-full border border-rose-200 hover:bg-rose-100">★</button>
+            <button type="button" data-value="2" class="star h-10 w-10 rounded-full border border-rose-200 hover:bg-rose-100">★</button>
+            <button type="button" data-value="3" class="star h-10 w-10 rounded-full border border-rose-200 hover:bg-rose-100">★</button>
+            <button type="button" data-value="4" class="star h-10 w-10 rounded-full border border-rose-200 hover:bg-rose-100">★</button>
+            <button type="button" data-value="5" class="star h-10 w-10 rounded-full border border-rose-200 hover:bg-rose-100">★</button>
+          </div>
+          <input id="ratingValue" type="hidden" value="5">
+        </div>
+        <button class="mt-6 w-full px-4 py-3 rounded-xl bg-primary text-white">Send Message</button>
+      </form>
+    </div>
+
+    <section class="mt-12">
+      <h2 class="text-xl font-semibold">Recent Feedback</h2>
+      <div id="feedbackList" class="mt-4 grid md:grid-cols-3 gap-4"></div>
+    </section>
+  </main>
+
+  <footer class="border-t border-rose-100 bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-8 text-sm text-ink/60 flex items-center justify-between">
+      <div>© <span id="year"></span> LumiGlow</div>
+      <a href="index.html" class="text-primary">Back to Home</a>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

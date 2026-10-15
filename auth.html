@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LumiGlow • Account</title>
+  <meta http-equiv="refresh" content="0; url=login.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: { DEFAULT: '#e11d48' }, ink: '#0f172a' },
+          fontFamily: { sans: ['Poppins','ui-sans-serif','system-ui','Segoe UI'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-ink font-sans">
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="text-center">
+      <div class="text-xl font-semibold">Redirecting to Login…</div>
+      <div class="mt-2 text-sm text-ink/70">If not redirected, <a class="text-primary" href="login.html">click here</a>.</div>
+    </div>
+  </div>
+  <script>setTimeout(()=>location.replace('login.html'), 0)</script>
+</body>
+</html>
